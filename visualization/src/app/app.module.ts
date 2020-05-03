@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AngularCesiumModule } from 'angular-cesium';
 
 import {  AngularCesiumWidgetsModule } from 'angular-cesium';
-import { MyMapComponent } from './my-map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StatsComponent } from './stats/stats.component';
 import {MatInputModule} from '@angular/material/input';
@@ -20,11 +19,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CesiumDirective } from './cesium.directive';
 import {DataTablesModule} from 'angular-datatables';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    MyMapComponent,
     StatsComponent,
     CesiumDirective
   ],
