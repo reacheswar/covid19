@@ -1,0 +1,31 @@
+{
+    "data": [
+      {
+        "state": "Tamil Nadu",
+        "total": "1000",
+        "active": "500",
+        "recovered":"300",
+        "deceased":"100",
+        "contributionPercentage":"20%",
+        "recoveryPercentage":"70%"
+      },
+      {
+        "state": "Karnataka",
+        "total": "1000",
+        "active": "500",
+        "recovered":"300",
+        "deceased":"100",
+        "contributionPercentage":"20%",
+        "recoveryPercentage":"70%"
+      },
+      {
+        "state": "Andhra Pradesh",
+        "total": "1000",
+        "active": "500",
+        "recovered":"300",
+        "deceased":"100",
+        "contributionPercentage":"20%",
+        "recoveryPercentage":"70%"
+      }
+    ]
+  }

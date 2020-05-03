@@ -1,0 +1,19 @@
+<!--<mat-grid-list cols="2" rowHeight=100%>
+    <mat-grid-tile>
+        <stats-india ></stats-india>
+    </mat-grid-tile> 
+    <mat-grid-tile> 
+        <div appCesium class="map-container"></div>
+    </mat-grid-tile>
+</mat-grid-list> -->
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" fxFlexFill>
+<!--<div class="cardList">-->
+    <!--<mat-card class="stats-card"> -->
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" [style.overflow]="'auto'">
+        <stats-india></stats-india>
+    </mat-card>
+    <!--<mat-card class="map-card"> -->
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" [style.overflow]="'auto'">
+        <div appCesium class="map-container"></div>
+    </mat-card>
+</div>
