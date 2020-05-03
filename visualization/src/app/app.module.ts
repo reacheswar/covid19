@@ -18,12 +18,24 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CesiumDirective } from './cesium.directive';
 import {DataTablesModule} from 'angular-datatables';
+import { MatIconModule } from  '@angular/material/icon';
+import { MatSidenavModule } from  '@angular/material/sidenav';
+import { MatListModule } from  '@angular/material/list';
+import { InStatewiseComponent } from './in-statewise/in-statewise.component';
+import { RouterModule } from '@angular/router';
+import { InDistrictwiseComponent } from './in-districtwise/in-districtwise.component';
+import { WorldComponent } from './world/world.component'
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     StatsComponent,
-    CesiumDirective
+    CesiumDirective,
+    InStatewiseComponent,
+    InDistrictwiseComponent,
+    WorldComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +51,15 @@ import {DataTablesModule} from 'angular-datatables';
     MatGridListModule,
     FlexLayoutModule,
     DataTablesModule,
-
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    RouterModule.forRoot([
+      { path: 'home', component: InStatewiseComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: 'in-district', component: InDistrictwiseComponent },
+      { path: 'world', component: WorldComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

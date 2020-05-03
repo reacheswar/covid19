@@ -9,12 +9,6 @@ export class StatsComponent implements OnInit {
 
   };
 
-  //Read Total Cases
-
-
-
-
-
   ngOnInit(): void {
     var india_total = 0;
     this.dtOptions = {
@@ -51,7 +45,7 @@ export class StatsComponent implements OnInit {
            "state": "Total"
          }
        }, */
-      pageLength: 25,
+      pageLength: 23,
       "order": [[1, 'dsc']],
       autoWidth: true,
       /*   "rowCallback": function (row, data, index) {

@@ -1,19 +1,31 @@
-<!--<mat-grid-list cols="2" rowHeight=100%>
-    <mat-grid-tile>
-        <stats-india ></stats-india>
-    </mat-grid-tile> 
-    <mat-grid-tile> 
-        <div appCesium class="map-container"></div>
-    </mat-grid-tile>
-</mat-grid-list> -->
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" fxFlexFill>
-<!--<div class="cardList">-->
-    <!--<mat-card class="stats-card"> -->
-    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" [style.overflow]="'auto'">
-        <stats-india></stats-india>
-    </mat-card>
-    <!--<mat-card class="map-card"> -->
-    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" [style.overflow]="'auto'">
-        <div appCesium class="map-container"></div>
-    </mat-card>
-</div>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <h1>Covid19 Report</h1>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+
+            <a mat-list-item [routerLink]="['/home']" routerLinkActive="active" (click)="sidenav.close()" > India Statewise </a>
+            <a mat-list-item [routerLink]="['/in-district']" (click)="sidenav.close()"> India Districtwise </a>
+            <a mat-list-item [routerLink]="['/world']"  (click)="sidenav.close()"> World </a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
