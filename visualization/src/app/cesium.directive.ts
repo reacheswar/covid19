@@ -106,7 +106,7 @@ export class CesiumDirective implements OnInit {
               var light_red12 = Cesium.Color.fromCssColorString('#17202A');
               light_red12.alpha = 1;
 
-              var outlineColour = Cesium.Color.fromCssColorString('#E4E3E2');
+              var outlineColour = Cesium.Color.fromCssColorString('#9a9b9c');
             outlineColour.aplha=1;
 
 
