@@ -45,7 +45,7 @@ export class StatsComponent implements OnInit {
            "state": "Total"
          }
        }, */
-      pageLength: 23,
+      pageLength: 25,
       "order": [[1, 'dsc']],
       autoWidth: true,
       /*   "rowCallback": function (row, data, index) {
